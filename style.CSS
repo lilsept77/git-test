@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link--list {
+    list-style-type: none;
+    margin: 0 12px;
+} 
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 40px;
+}
+
+ul {
+   display: flex;
+}
+
