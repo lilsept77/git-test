@@ -76,6 +76,8 @@
  .email_wrapper {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  max-width: 350px;
  }
  
  input,
@@ -88,6 +90,15 @@
 button {
   background-color: blueviolet;
   color: white; 
+}
+
+.landing-imput {
+  width: 100%;
+}
+
+.btn-input {
+  position: absolute;
+  right: 0;
 }
 
 
