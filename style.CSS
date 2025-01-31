@@ -6,34 +6,56 @@
     box-sizing: border-box;
 }
 
-img {
-    border-radius: 50px;
-   
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-div {
+.birth_decease {
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: space-around;
-    font-size: 24px;
+    font-size: 36px;
+    padding-bottom: 36px;
     color: black;
     text-shadow: 0 2px 2px rgb(240, 61, 61);
 }
 
-h1 {
-    font-family: "Daniela", sans-serif;
-    font-size: 30px;
-    font-style: italic;
+.container {
+    display: contents;
+    flex-direction: column;
+    align-items: center;
 }
 
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .pic_of_my_dad {
-    
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 5px 10px 20px 10px rgba(0,0,0,1);
+    margin-top: 48px;
+    animation: animate-pic_of_my_dad 800ms 1000ms ease backwards;
+}
+
+@keyframes animate-pic_of_my_dad {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(0);
+    }
 }
 
 .my_dad {
@@ -41,13 +63,28 @@ h1 {
 }
 
 .personal_logo {
+    margin-bottom: 36px;
     font-size: 50px;
     color: black;
+    text-shadow: 0 3px 2px red;
     font-family: "Andaluzia Personal Use", sans-serif;
+    animation: fade-up 650ms 800ms backwards; 
+    
+}
+
+@keyframes fade-up { 
+    0% {
+        opacity: 0;
+        transform: translateY(40px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .photo {
-    margin-bottom: 135px; 
+    margin-bottom: 300px; 
     display: flex;
     margin: 0%;
 }
@@ -69,16 +106,15 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(100%);
-    max-width: 550px;
+    max-width: 800px;
     color: red;
     text-shadow: 0 3px 2px white;
-    z-index: 5;  
+    z-index: 0;  
     opacity: 0;
     transition: transform 450ms, opacity 300ms; 
 }
     
 .photo-wrapper {
-    display: flex;
     box-shadow: 0 20px 80px rgb(0, 0, 0);
     border-radius: 20px;
     overflow: hidden;
@@ -98,30 +134,59 @@ h1 {
 }
 
 .photo:hover .photo-img {
-    transform: scale(1.07);
+    transform: scale(1.5);
     filter: blur(5px); 
 }
 
 .photo-para {
-    font-size: 34px;
+    font-size: 50px;
 }
 
-span {
+.rip {
     color: red;
     font-size: 50px;
     text-shadow: 0 3px 2px black;
     font-family: "Old English", sans-serif;
+    margin-top: 24px;
 }
 
 .para_2 {
     font-family: "Daniela", sans-serif;
     font-style: italic;
     font-size: 30px;
+    text-shadow: 0 3px 2px red;
     border: solid 2px black;
     border-radius: 10px;
     width: 500px;
-    margin: 24px;
     box-shadow: 5px 10px 10px;
+    display: flex;
+    text-align: center;
+    animation: fade-up 650ms 800ms backwards; 
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.jfk {
+    width: 50%;
+    border-radius: 50px;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0 12px 50px 20px black;
+}
+
+.worksite {
+    display: flex;
+    padding: 48px;
+    margin: 0 auto;
+    font-size: 50px;
+    max-width: 600px;
 }
 
 
