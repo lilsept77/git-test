@@ -43,6 +43,7 @@ div {
     overflow: hidden;
     box-shadow: 5px 10px 20px 10px rgba(0,0,0,1);
     margin-top: 48px;
+    transform: scale(1.3);
     animation: animate-pic_of_my_dad 800ms 1000ms ease backwards;
 }
 
@@ -107,8 +108,8 @@ div {
     top: 50%;
     transform: translateY(100%);
     max-width: 800px;
-    color: red;
-    text-shadow: 0 3px 2px white;
+    color: black;
+    text-shadow: 0 3px 2px red;
     z-index: 0;  
     opacity: 0;
     transition: transform 450ms, opacity 300ms; 
@@ -147,7 +148,7 @@ div {
     font-size: 50px;
     text-shadow: 0 3px 2px black;
     font-family: "Old English", sans-serif;
-    margin-top: 24px;
+    
 }
 
 .para_2 {
