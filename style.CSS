@@ -29,13 +29,6 @@ nav {
     align-items: center;
 }
 
-.photo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .pic_of_my_dad {
     width: 200px;
     height: 200px;
@@ -116,6 +109,9 @@ nav {
 }
     
 .photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 20px 80px rgb(0, 0, 0);
     border-radius: 20px;
     overflow: hidden;
@@ -178,20 +174,29 @@ nav {
     }
 }
 
-.jfk {
+.w_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.w_container img {
     width: 50%;
-    border-radius: 50px;
     display: flex;
     margin: 0 auto;
-    box-shadow: 0 12px 50px 20px black;
+    margin-top: 60px;
+    border-radius: 50px;
+    box-shadow: 0 20px 80px rgb(0, 0, 0);
 }
 
-.worksite {
-    display: flex;
-    padding: 48px;
-    margin: 0 auto;
-    font-size: 50px;
-    max-width: 600px;
+.w_container .jfk {
+    position: absolute;
+    width: 50%;
+    color: white;
+    left: 58%;
+    top: 20%;
+    font-size: 60px;
+    text-shadow: 5px 5px 2px black;
+    transform: translate(-50%, -50%);
 }
 
 
