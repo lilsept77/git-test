@@ -29,7 +29,7 @@ nav {
     align-items: center;
 }
 
-div {
+.photo-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,9 +160,13 @@ div {
     border-radius: 10px;
     width: 500px;
     box-shadow: 5px 10px 10px;
-    display: flex;
     text-align: center;
     animation: fade-up 650ms 800ms backwards; 
+}
+
+.para-2 {
+    display: flex;
+    align-items: center;
 }
 
 @keyframes fade-out {
